@@ -1,0 +1,9 @@
+import lyricsgenius
+
+# Replace with your Genius API token
+genius = lyricsgenius.Genius("your_genius_api_token")
+song = genius.search_song("Keep Ya Head Up", "Tupac")
+if song:
+    print(song.lyrics)
+else:
+    print("Lyrics not found.")
